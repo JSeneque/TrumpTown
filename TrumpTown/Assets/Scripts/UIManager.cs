@@ -18,8 +18,8 @@ public class UIManager : MonoBehaviour {
 
     private void UpdateTopBar()
     {
-        txtBank.text = "Bank $ " + GameManager.Instance.bank.ToString();
-        txtPeople.text = "People " + GameManager.Instance.people.ToString() + " / " +
+        txtBank.text = GameManager.Instance.bank.ToString();
+        txtPeople.text = GameManager.Instance.people.ToString() + " / " +
             GameManager.Instance.peopleMax.ToString();
 
     }
