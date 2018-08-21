@@ -346,5 +346,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a9d634a28ee234aa9c951b787d1e50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  construction: 0
-  raiseSpeed: 3
+  built: 0
+  raiseSpeed: 1

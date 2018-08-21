@@ -3,27 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class House : MonoBehaviour {
-    public bool construction = false;
+    public bool built = false;
     public float raiseSpeed = 10;
 		
 	// Update is called once per frame
 	void Update () {
-		if (!construction) {
-            StartCoroutine(Raise());
+        //if (!built) {
+        //    StartCoroutine(Raise());
+        //}
+        //else {
+        //    StartCoroutine(Lower());
+        //}
+        if (built) {
+            Raise();
         }
-	}
+        else {
+            Lower();
+        }
+    }
 
+    //IEnumerator Raise()
+    //{
+    //    Vector3 targetPos = new Vector3(transform.position.x, 0.25f, transform.position.z);
+    //    yield return new WaitForSeconds(1.0f);
 
+    //    transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
 
+    //    built = true;
+    //}
 
-    IEnumerator Raise()
+    public void setBuild()
+    {
+        if (built) {
+            built = false;
+        }else {
+            built = true;
+        }
+    }
+
+    public void Raise()
     {
         Vector3 targetPos = new Vector3(transform.position.x, 0.25f, transform.position.z);
-        yield return new WaitForSeconds(1.0f);
-
-        // y = -2.82 go to y = -0.46
         transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
-
-        construction = true;
     }
+
+    public void Lower()
+    {
+        Vector3 targetPos = new Vector3(transform.position.x, -2.5f, transform.position.z);
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
+    }
+
+    //IEnumerator Lower()
+    //{
+    //    Vector3 targetPos = new Vector3(transform.position.x, -2.5f, transform.position.z);
+    //    yield return new WaitForSeconds(1.0f);
+
+    //    transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
+
+    //    //built = false;
+    //}
 }

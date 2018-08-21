@@ -110,6 +110,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   housePrefab: {fileID: 1892882111179304, guid: 61f40e1af5eaef7429ebcb8364ef61ab,
     type: 2}
+  smokePrefab: {fileID: 1115616687312136, guid: 69484711d61bda84a9c1e5678fa66794,
+    type: 2}
   canBuild: 1
   rotateSpeed: 1
   testRotatingTile: 0
+  target: {fileID: 0}
+  speed: 0
+  housePosition: 0.24576
