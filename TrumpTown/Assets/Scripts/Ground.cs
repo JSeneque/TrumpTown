@@ -8,12 +8,12 @@ public class Ground : MonoBehaviour {
 
     public bool canBuild = true;
     public float rotateSpeed = 1f;
-    public bool testRotatingTile = false;
+    public bool isRotatingTile = false;
     public Transform target;
     public float speed;
     public float housePosition = 0.24576f;
 
-    private bool occupied = false;
+    private bool isOccupied = false;
     private bool rotate = false;
     private Quaternion targetRotation;
     private Vector3 tilePos;
@@ -25,43 +25,10 @@ public class Ground : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (GameManager.Instance.GetBalance() >= 100 && !occupied && canBuild) {
-            // get the tiles position
-            tilePos = this.transform.position;
-            Vector3 housePos;
-
-            if (testRotatingTile) {
-                // make the tile the parent object for the house
-                housePos = new Vector3(tilePos.x, housePosition, tilePos.z);
-                GameObject house = (GameObject)Instantiate(housePrefab, tilePos, Quaternion.AngleAxis(180.0f, transform.forward) * transform.rotation);
-                house.transform.parent = this.gameObject.transform;
-
-                StartCoroutine(Rotate());
-            } else {
-                housePos = new Vector3(tilePos.x, -2.5f, tilePos.z);
-                GameObject house = (GameObject)Instantiate(housePrefab, housePos, Quaternion.identity);
-
-                CreateBuildingSmoke();
-
-                // construct building
-                house.transform.parent = this.gameObject.transform;
-                house.GetComponent<House>().setBuild();
-            }
-
-            // deduct funds for building
-            GameManager.Instance.bank -= 100;
-
-            // set the ground tile as occupied
-            occupied = true;
-        } else if (occupied && !testRotatingTile) {
-            // find the build attach to the tile
-            GameObject house = getChildGameObject(this.gameObject, "TealWhiteHouse(Clone)");
-
-            // lower it
-            CreateBuildingSmoke();
-            house.GetComponent<House>().setBuild();
-            Destroy(house, 3.0f);
-            occupied = false;
+        if (isRotatingTile) {
+            RotateTile();
+        } else {  
+            RisingTile();
         }
     }
 
@@ -97,6 +64,76 @@ public class Ground : MonoBehaviour {
         ParticleSystem parts = smokePuff.GetComponent<ParticleSystem>();
         float totalDuration = parts.main.duration + 2.0f;
         Destroy(smokePuff, totalDuration);
+    }
+
+    void RotateTile()
+    {
+        if (GameManager.Instance.GetBalance() >= 100 && !isOccupied && canBuild) {
+            // get the tiles position
+            tilePos = this.transform.position;
+            Vector3 housePos;
+            
+            // set the position of the building
+            housePos = new Vector3(tilePos.x, housePosition, tilePos.z);
+
+            // put the building in the scene
+            GameObject house = (GameObject)Instantiate(housePrefab, tilePos, Quaternion.AngleAxis(180.0f, transform.forward) * transform.rotation);
+
+            // make the tile the parent object for the house
+            house.transform.parent = this.gameObject.transform;
+
+            // wait a second then rotate tile with the building
+            StartCoroutine(Rotate());
+
+            // deduct funds for building
+            GameManager.Instance.bank -= 100;
+
+            // set the ground tile as occupied
+            isOccupied = true;
+        } else if (isOccupied) {
+            // wait a second then rotate tile with the building
+            StartCoroutine(Rotate());
+            isOccupied = false;
+        }
+    }
+
+    void RisingTile ()
+    {
+        if (GameManager.Instance.GetBalance() >= 100 && !isOccupied && canBuild) {
+            // get the tiles position
+            tilePos = this.transform.position;
+            Vector3 housePos;
+            
+            // set the building positon under the tile
+            housePos = new Vector3(tilePos.x, -2.5f, tilePos.z);
+
+            // add the building to the scene
+            GameObject house = (GameObject)Instantiate(housePrefab, housePos, Quaternion.identity);
+
+            // start the building smoke
+            CreateBuildingSmoke();
+
+            // assign the tile as the parent of this building
+            house.transform.parent = this.gameObject.transform;
+
+            // construct building
+            house.GetComponent<House>().setBuild();
+
+            // deduct funds for building
+            GameManager.Instance.bank -= 100;
+
+            // set the ground tile as occupied
+            isOccupied = true;
+        } else if (isOccupied) {
+            // find the build attach to the tile
+            GameObject house = getChildGameObject(this.gameObject, "TealWhiteHouse(Clone)");
+
+            // lower it
+            CreateBuildingSmoke();
+            house.GetComponent<House>().setBuild();
+            Destroy(house, 3.0f);
+            isOccupied = false;
+        }
     }
 
 }

@@ -530,6 +530,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
         type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
@@ -934,6 +939,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
         type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
@@ -1634,6 +1644,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
         type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
@@ -1837,6 +1852,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
         type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
