@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour {
 
     public Text txtBank;
     public Text txtPeople;
+    public Text txtPeriod;
     
 
     private void Awake()
@@ -21,6 +22,7 @@ public class UIManager : MonoBehaviour {
         txtBank.text = GameManager.Instance.bank.ToString();
         txtPeople.text = GameManager.Instance.people.ToString() + " / " +
             GameManager.Instance.peopleMax.ToString();
+        txtPeriod.text = GameManager.Instance.period.ToString();
 
     }
 
