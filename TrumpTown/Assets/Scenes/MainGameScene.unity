@@ -892,7 +892,7 @@ MonoBehaviour:
   people: 0
   peopleMax: 0
   period: March
-  targetTimer: 10
+  targetTimer: 3
 --- !u!1001 &528779295
 Prefab:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
     public int peopleMax;
     public string period;
 
-    public float targetTimer = 5000.0f;
+    public float targetTimer = 5.0f;
     private float currentTime;
 
     private string[] monthsList = {"Jan", "Feb", "Mar", "Apr",
