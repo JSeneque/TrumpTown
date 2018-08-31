@@ -115,7 +115,7 @@ public class Ground : MonoBehaviour {
                 }
             }
 
-            StartCoroutine(RaiseHouseAfterTime(2));
+            StartCoroutine(RaiseHouseAfterTime(3));
 
             // deduct funds for building
             GameManager.Instance.bank -= 100;
