@@ -21,6 +21,7 @@ public class Ground : MonoBehaviour {
     private void Start()
     {
         targetRotation = transform.rotation;
+        tilePos = this.transform.position;
     }
 
     void OnMouseDown()
@@ -90,6 +91,10 @@ public class Ground : MonoBehaviour {
 
             // set the ground tile as occupied
             isOccupied = true;
+
+            // determine if there is a object attached to the tile and destroy for now
+            StartCoroutine(RemoveVegetationAfterTime(2));
+
         } else if (isOccupied) {
             // wait a second then rotate tile with the building
             StartCoroutine(Rotate());
@@ -100,24 +105,17 @@ public class Ground : MonoBehaviour {
     void RisingTile ()
     {
         if (GameManager.Instance.GetBalance() >= 100 && !isOccupied && canBuild) {
-            // get the tiles position
-            tilePos = this.transform.position;
-            Vector3 housePos;
-            
-            // set the building positon under the tile
-            housePos = new Vector3(tilePos.x, -2.5f, tilePos.z);
-
-            // add the building to the scene
-            GameObject house = (GameObject)Instantiate(housePrefab, housePos, Quaternion.identity);
-
             // start the building smoke
             CreateBuildingSmoke();
 
-            // assign the tile as the parent of this building
-            house.transform.parent = this.gameObject.transform;
+            //lower the tree
+            foreach (Transform child in transform) {
+                if (child.tag == "Vegetation") {
+                    child.GetComponent<Vegetation>().setLower();
+                }
+            }
 
-            // construct building
-            house.GetComponent<House>().setBuild();
+            StartCoroutine(RaiseHouseAfterTime(2));
 
             // deduct funds for building
             GameManager.Instance.bank -= 100;
@@ -135,5 +133,39 @@ public class Ground : MonoBehaviour {
             isOccupied = false;
         }
     }
+
+    IEnumerator RemoveVegetationAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        foreach (Transform child in transform) {
+            if (child.tag == "Vegetation") {
+                GameObject.Destroy(child.gameObject);
+            }
+        }
+    }
+
+    IEnumerator RaiseHouseAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // get the tiles position
+        tilePos = this.transform.position;
+        Vector3 housePos;
+
+        // set the building positon under the tile
+        housePos = new Vector3(tilePos.x, -2.5f, tilePos.z);
+
+        // add the building to the scene
+        GameObject house = (GameObject)Instantiate(housePrefab, housePos, Quaternion.identity);
+        // assign the tile as the parent of this building
+        house.transform.parent = this.gameObject.transform;
+
+        // construct building
+        house.GetComponent<House>().setBuild();
+    }
+
+
+
 
 }
