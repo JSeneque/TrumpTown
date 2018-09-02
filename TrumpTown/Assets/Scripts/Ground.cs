@@ -11,7 +11,7 @@ public class Ground : MonoBehaviour {
     public bool isRotatingTile = false;
     public Transform target;
     public float speed;
-    public float housePosition = 0.24576f;
+    public float housePosition = 0.25f;
 
     private bool isOccupied = false;
     private bool rotate = false;
@@ -78,7 +78,7 @@ public class Ground : MonoBehaviour {
             housePos = new Vector3(tilePos.x, housePosition, tilePos.z);
 
             // put the building in the scene
-            GameObject house = (GameObject)Instantiate(housePrefab, tilePos, Quaternion.AngleAxis(180.0f, transform.forward) * transform.rotation);
+            GameObject house = (GameObject)Instantiate(housePrefab, housePos, Quaternion.AngleAxis(180.0f, transform.forward) * transform.rotation);
 
             // make the tile the parent object for the house
             house.transform.parent = this.gameObject.transform;
@@ -87,7 +87,10 @@ public class Ground : MonoBehaviour {
             StartCoroutine(Rotate());
 
             // deduct funds for building
+            // TODO: ground script is doing too much. we need to shift this logic in a better spot
+            // TODO: get rid of these hard coded values
             GameManager.Instance.bank -= 100;
+            GameManager.Instance.peopleMax += 3;
 
             // set the ground tile as occupied
             isOccupied = true;
@@ -164,6 +167,8 @@ public class Ground : MonoBehaviour {
         // construct building
         house.GetComponent<House>().setBuild();
     }
+
+    
 
 
 

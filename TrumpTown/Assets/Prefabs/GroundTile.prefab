@@ -114,7 +114,7 @@ MonoBehaviour:
     type: 2}
   canBuild: 1
   rotateSpeed: 1
-  testRotatingTile: 0
+  isRotatingTile: 0
   target: {fileID: 0}
   speed: 0
-  housePosition: 0.24576
+  housePosition: -0.25

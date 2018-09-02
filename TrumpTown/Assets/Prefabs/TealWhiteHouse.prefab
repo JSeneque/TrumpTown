@@ -88,9 +88,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4166328425491208}
   - component: {fileID: 114926522980579104}
+  - component: {fileID: 65275381571732096}
+  - component: {fileID: 54170044153058212}
   m_Layer: 0
   m_Name: TealWhiteHouse
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,6 +337,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1490944845727416}
   m_Mesh: {fileID: 4300004, guid: 4547fdc9359ba5b4d81c777df479626c, type: 3}
+--- !u!54 &54170044153058212
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1892882111179304}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65275381571732096
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1892882111179304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19, y: 0.21, z: 0.18}
+  m_Center: {x: 0, y: 0.12, z: 0}
 --- !u!114 &114926522980579104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -348,3 +377,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   built: 0
   raiseSpeed: 1
+  occupied: 0
+  chimneySmokePrefab: {fileID: 1506693906918844, guid: 2baf5477709233f4abdcd5a4b29ec590,
+    type: 2}
