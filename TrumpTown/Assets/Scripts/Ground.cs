@@ -41,8 +41,6 @@ public class Ground : MonoBehaviour {
             rotate = false;
         }
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed * Time.deltaTime);
-
-
     }
 
     IEnumerator Rotate()
@@ -89,6 +87,7 @@ public class Ground : MonoBehaviour {
             // deduct funds for building
             // TODO: ground script is doing too much. we need to shift this logic in a better spot
             // TODO: get rid of these hard coded values
+            // this can probably go in the house start
             GameManager.Instance.bank -= 100;
             GameManager.Instance.peopleMax += 3;
 
@@ -105,6 +104,7 @@ public class Ground : MonoBehaviour {
         }
     }
 
+    // move this to house
     void RisingTile ()
     {
         if (GameManager.Instance.GetBalance() >= 100 && !isOccupied && canBuild) {
@@ -125,6 +125,8 @@ public class Ground : MonoBehaviour {
 
             // set the ground tile as occupied
             isOccupied = true;
+
+            // this can be refactored to house to do
         } else if (isOccupied) {
             // find the build attach to the tile
             GameObject house = getChildGameObject(this.gameObject, "TealWhiteHouse(Clone)");
@@ -147,7 +149,7 @@ public class Ground : MonoBehaviour {
             }
         }
     }
-
+    // move this to the house script
     IEnumerator RaiseHouseAfterTime(float time)
     {
         yield return new WaitForSeconds(time);

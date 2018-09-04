@@ -248,6 +248,22 @@ Prefab:
       propertyPath: m_Name
       value: GroundTile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
@@ -498,6 +514,22 @@ Prefab:
       propertyPath: m_Name
       value: GroundTile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
@@ -543,6 +575,22 @@ Prefab:
     - target: {fileID: 1351828359855684, guid: d3f702f77275c394f94154035abdc39f, type: 2}
       propertyPath: m_Name
       value: GroundTile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -738,7 +786,23 @@ Prefab:
     - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
         type: 2}
       propertyPath: canBuild
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -1047,6 +1111,22 @@ Prefab:
       propertyPath: m_Name
       value: GroundTile (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
   m_IsPrefabAsset: 0
@@ -1144,7 +1224,23 @@ Prefab:
     - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
         type: 2}
       propertyPath: canBuild
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -1446,6 +1542,22 @@ Prefab:
     - target: {fileID: 4400978743196722, guid: d3f702f77275c394f94154035abdc39f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -2280,7 +2392,23 @@ Prefab:
     - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
         type: 2}
       propertyPath: canBuild
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -2482,6 +2610,22 @@ Prefab:
     - target: {fileID: 1351828359855684, guid: d3f702f77275c394f94154035abdc39f, type: 2}
       propertyPath: m_Name
       value: GroundTile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -2688,7 +2832,23 @@ Prefab:
     - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
         type: 2}
       propertyPath: canBuild
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -3318,7 +3478,23 @@ Prefab:
     - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
         type: 2}
       propertyPath: canBuild
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}
@@ -3365,6 +3541,22 @@ Prefab:
     - target: {fileID: 1351828359855684, guid: d3f702f77275c394f94154035abdc39f, type: 2}
       propertyPath: m_Name
       value: GroundTile (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: isRotatingTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: housePrefab
+      value: 
+      objectReference: {fileID: 1969819546319118, guid: ba45f49025fbf044f84bb3e59c96ea87,
+        type: 2}
+    - target: {fileID: 114148287609069498, guid: d3f702f77275c394f94154035abdc39f,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f702f77275c394f94154035abdc39f, type: 2}

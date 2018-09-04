@@ -20,10 +20,11 @@ public class People : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        //other.GetComponent<House>().IncreaseDwellers();
         Destroy(gameObject);
     }
 
-    public void setTargetPosition(Transform pos)
+    public void SetTargetPosition(Transform pos)
     {
         target = pos;
     }

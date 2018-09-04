@@ -8,23 +8,24 @@ public class House : MonoBehaviour
     public float raiseSpeed = 10;
     public bool occupied = false;               // flag if someone rented the house
     public GameObject chimneySmokePrefab;
-
+    public int capacity = 3;
+    public int numberOfDwellers = 0;
     private Vector3 housePos;
 
     private void Start()
     {
-        housePos = this.transform.position;
+        //housePos = this.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (built) {
-            Raise();
-        }
-        else {
-            Lower();
-        }
+        //if (built) {
+        //    Raise();
+        //}
+        //else {
+        //    Lower();
+        //}
     }
 
     // sets the flag to build or not build building
@@ -41,16 +42,16 @@ public class House : MonoBehaviour
     // raise the building from the ground
     public void Raise()
     {
-        Vector3 targetPos = new Vector3(transform.position.x, 0.25f, transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
-        //StartCoroutine(OccupyBuilding(5));
+        //Vector3 targetPos = new Vector3(transform.position.x, 0.25f, transform.position.z);
+        //transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
+        ////StartCoroutine(OccupyBuilding(5));
     }
 
     // lowers the building
     public void Lower()
     {
-        Vector3 targetPos = new Vector3(transform.position.x, -2.5f, transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
+        //Vector3 targetPos = new Vector3(transform.position.x, -2.5f, transform.position.z);
+        //transform.position = Vector3.MoveTowards(transform.position, targetPos, raiseSpeed * Time.deltaTime);
     }
 
     // someone rents the building
@@ -74,5 +75,21 @@ public class House : MonoBehaviour
         ps = chimneySmoke.GetComponent<ParticleSystem>();
         var main = ps.main;
         main.loop = true;
+    }
+
+    public int GetNumberOfDwellers()
+    {
+        return numberOfDwellers;
+    }
+
+    public int GetCapacity()
+    {
+        return capacity;
+    }
+
+    // can be named better to IncreaseDwellers
+    public void IncreaseDwellers()
+    {
+        numberOfDwellers++;
     }
 }

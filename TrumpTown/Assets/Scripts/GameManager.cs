@@ -75,9 +75,17 @@ public class GameManager : MonoBehaviour {
             people++;
             GameObject newPerson = (GameObject)Instantiate(personPrefab, personStartPos, Quaternion.AngleAxis(-90, transform.up));
             // for now we will send the person to the one house
-            GameObject house = GameObject.FindGameObjectWithTag("Building");
+            //GameObject house = GameObject.FindGameObjectWithTag("Building");
+            GameObject[] houses = GameObject.FindGameObjectsWithTag("Building");
 
-            newPerson.GetComponent<People>().setTargetPosition(house.transform);
+            foreach (GameObject house in houses) {
+                if (house.GetComponent<House>().GetNumberOfDwellers() < house.GetComponent<House>().GetCapacity()) {
+                    newPerson.GetComponent<People>().SetTargetPosition(house.transform);
+                    house.GetComponent<House>().IncreaseDwellers();
+                }
+            }
+
+            
 
         }
     }
