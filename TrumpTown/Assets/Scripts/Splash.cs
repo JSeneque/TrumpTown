@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class Splash : MonoBehaviour {
 
     public Image splashBG; // Splash Background
-    public string loadMainMenu; // Move to next scene
 
     IEnumerator Start()
     {
@@ -18,7 +17,7 @@ public class Splash : MonoBehaviour {
         FadeOut();
         yield return new WaitForSeconds(2.5f);
 
-        SceneManager.LoadScene(loadMainMenu);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void FadeIn()

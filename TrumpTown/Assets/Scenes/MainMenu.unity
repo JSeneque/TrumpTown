@@ -604,7 +604,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a12843146b1d9c4badb26662a747e51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9df03df2d1179cd4ea626fdca64bea1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -692,12 +692,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 393133695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e2f657806966743a9798c3392a9fab, type: 3}
+  m_Script: {fileID: 11500000, guid: 830338e42f978a4429ba74cc534fbb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 393133703}
-  hoverFx: {fileID: 8300000, guid: 2910d62c9a7354e4e9d728ff5c2cf9ca, type: 3}
-  clickFx: {fileID: 8300000, guid: c7e0068e21c81984caa51dc6a99ecebc, type: 3}
+  hoverFx: {fileID: 8300000, guid: 9b44b426d5b2d8849a3b97a2460f958e, type: 3}
+  clickFx: {fileID: 8300000, guid: 937f34a31cc3e7d40a52c8014b5e4630, type: 3}
 --- !u!82 &393133703
 AudioSource:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 393133695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbaa52788a2db724882293e9e43372df, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eb47128433f87647a9c256872cc0633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &856232908
@@ -965,9 +965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e2f657806966743a9798c3392a9fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 943459527}
-  hoverFx: {fileID: 8300000, guid: 2910d62c9a7354e4e9d728ff5c2cf9ca, type: 3}
-  clickFx: {fileID: 8300000, guid: c7e0068e21c81984caa51dc6a99ecebc, type: 3}
 --- !u!82 &943459527
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1163,7 +1160,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a12843146b1d9c4badb26662a747e51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9df03df2d1179cd4ea626fdca64bea1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1301,7 +1298,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a12843146b1d9c4badb26662a747e51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9df03df2d1179cd4ea626fdca64bea1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1389,12 +1386,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 961058808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e2f657806966743a9798c3392a9fab, type: 3}
+  m_Script: {fileID: 11500000, guid: 830338e42f978a4429ba74cc534fbb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 961058816}
-  hoverFx: {fileID: 8300000, guid: 2910d62c9a7354e4e9d728ff5c2cf9ca, type: 3}
-  clickFx: {fileID: 8300000, guid: c7e0068e21c81984caa51dc6a99ecebc, type: 3}
+  hoverFx: {fileID: 8300000, guid: 9b44b426d5b2d8849a3b97a2460f958e, type: 3}
+  clickFx: {fileID: 8300000, guid: 937f34a31cc3e7d40a52c8014b5e4630, type: 3}
 --- !u!82 &961058816
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1660,12 +1657,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 992380586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e2f657806966743a9798c3392a9fab, type: 3}
+  m_Script: {fileID: 11500000, guid: 830338e42f978a4429ba74cc534fbb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 992380590}
-  hoverFx: {fileID: 8300000, guid: 2910d62c9a7354e4e9d728ff5c2cf9ca, type: 3}
-  clickFx: {fileID: 8300000, guid: c7e0068e21c81984caa51dc6a99ecebc, type: 3}
+  hoverFx: {fileID: 8300000, guid: 9b44b426d5b2d8849a3b97a2460f958e, type: 3}
+  clickFx: {fileID: 8300000, guid: 937f34a31cc3e7d40a52c8014b5e4630, type: 3}
 --- !u!82 &992380590
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1843,7 +1840,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a12843146b1d9c4badb26662a747e51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9df03df2d1179cd4ea626fdca64bea1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2039,7 +2036,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d0249757e5e25784eb2432200c3f8a03, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e77b3ef30f3d9be45bbe5f1c32c89ffe, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -2157,7 +2154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 135}
+  m_AnchoredPosition: {x: 0, y: 57}
   m_SizeDelta: {x: 1256.4, y: 454.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175179999
@@ -2186,13 +2183,18 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'About the game:'
+  m_Text: "This is a tycoon style game where the player builds a town by buying and
+    building houses on tiles and renting them out to people. The player starts off
+    with a randomly generated map, no people and little money. \r\nYou start by clearing
+    the land, so you can build houses for people to move into. Each month the player
+    can collect rent from each house and depending on how many people are renting
+    the house out will determine how much rent you receive."
 --- !u!222 &1175180000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2298,9 +2300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e2f657806966743a9798c3392a9fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 1291609445}
-  hoverFx: {fileID: 8300000, guid: c7e0068e21c81984caa51dc6a99ecebc, type: 3}
-  clickFx: {fileID: 8300000, guid: 2910d62c9a7354e4e9d728ff5c2cf9ca, type: 3}
 --- !u!82 &1291609445
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2622,7 +2621,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c4e3c1f1dcbcb0444b82d13140cfe454, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 302dbb6269839fa48a5f5a15b8fbc87c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2670,7 +2669,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -2882,6 +2881,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1808233404}
+        m_MethodName: playGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1601490331
@@ -2903,7 +2913,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a12843146b1d9c4badb26662a747e51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9df03df2d1179cd4ea626fdca64bea1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2944,12 +2954,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601490328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e2f657806966743a9798c3392a9fab, type: 3}
+  m_Script: {fileID: 11500000, guid: 830338e42f978a4429ba74cc534fbb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1601490335}
-  hoverFx: {fileID: 8300000, guid: 2910d62c9a7354e4e9d728ff5c2cf9ca, type: 3}
-  clickFx: {fileID: 8300000, guid: c7e0068e21c81984caa51dc6a99ecebc, type: 3}
+  hoverFx: {fileID: 8300000, guid: 9b44b426d5b2d8849a3b97a2460f958e, type: 3}
+  clickFx: {fileID: 8300000, guid: 937f34a31cc3e7d40a52c8014b5e4630, type: 3}
 --- !u!82 &1601490335
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3348,7 +3358,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808233399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbaa52788a2db724882293e9e43372df, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eb47128433f87647a9c256872cc0633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2007716282
